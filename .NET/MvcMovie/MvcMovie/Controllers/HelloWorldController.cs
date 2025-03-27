@@ -7,9 +7,15 @@ public class HelloWorldController : Controller
 {
     // 
     // GET: /HelloWorld/
+
+    /*
     public string Index()
     {
         return "domyślna akcja...";
+    }*/
+    public IActionResult Index()
+    {
+        return View();
     }
     // 
     // GET: /HelloWorld/Welcome/ 
@@ -28,5 +34,12 @@ public class HelloWorldController : Controller
     public string Welcome2(string name, int ID = 1)
     {
         return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
+    }
+
+    public IActionResult Welcome3(string name, int numTimes = 1)
+    {
+        ViewData["Message"] = "Hello " + name;
+        ViewData["NumTimes"] = numTimes;
+        return View();
     }
 }
