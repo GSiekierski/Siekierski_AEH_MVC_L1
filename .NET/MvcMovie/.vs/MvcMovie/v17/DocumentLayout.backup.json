@@ -14,11 +14,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
@@ -26,11 +30,11 @@
               "Title": "Movie.cs",
               "DocumentMoniker": "C:\\Users\\GS\\source\\repos\\GSiekierski\\Siekierski_AEH_MVC_L1\\.NET\\MvcMovie\\MvcMovie\\Models\\Movie.cs",
               "RelativeDocumentMoniker": "MvcMovie\\Models\\Movie.cs",
-              "ToolTip": "C:\\Users\\GS\\source\\repos\\GSiekierski\\Siekierski_AEH_MVC_L1\\.NET\\MvcMovie\\MvcMovie\\Models\\Movie.cs",
-              "RelativeToolTip": "MvcMovie\\Models\\Movie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\GS\\source\\repos\\GSiekierski\\Siekierski_AEH_MVC_L1\\.NET\\MvcMovie\\MvcMovie\\Models\\Movie.cs*",
+              "RelativeToolTip": "MvcMovie\\Models\\Movie.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T18:34:24.772Z",
+              "WhenOpened": "2025-04-03T20:39:43.189Z",
               "EditorCaption": ""
             }
           ]
