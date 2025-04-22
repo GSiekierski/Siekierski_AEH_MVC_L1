@@ -1,0 +1,11 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'movies/style.css' %}">
+
+<h1>Usuń film</h1>
+<p>Czy na pewno chcesz usunąć <b>{{ movie.title }}</b>?</p>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Usuń</button>
+    <a href="{% url 'movie_list' %}">Anuluj</a>
+</form>
