@@ -1,0 +1,9 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'movies/style.css' %}">
+
+<h1>{% if edit %}Edytuj film{% else %}Nowy film{% endif %}</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">{% if edit %}Zapisz{% else %}Dodaj{% endif %}</button>
+</form>

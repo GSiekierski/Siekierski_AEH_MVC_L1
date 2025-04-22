@@ -1,0 +1,12 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'movies/style.css' %}">
+
+<h1>Katalog kolekcji filmów</h1>
+<a href="{% url 'movie_add' %}">Dodaj nowy film do kolekcji</a>
+<ul>
+    {% for movie in movies %}
+    <li>{{movie.title}} - reżyser: {{movie.director}} - <b>Ocena: {{movie.rating}}/10</b>
+    <a href="{% url 'movie_edit' movie.pk %}">Edytuj</a><a href="{% url 'movie_delete' movie.pk %}">Usuń</a>
+    </li>
+    {% endfor %}
+</ul>
